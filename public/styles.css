@@ -1,0 +1,92 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html{
+  background: url(./floral.jpg) repeat center top fixed;
+  -webkit-background-size: cover;
+  text-align: center;
+  font-family: 'Lobster', cursive, sans-serif;
+}
+body{
+  margin-top: auto;
+  border: 15px solid black;
+  background: #69d2fe;
+  height: auto;
+  width: 75%;
+  display: block;
+  margin: auto;
+  margin-top: 3em;
+}
+h1{
+  font-size: 50px;
+  color: #fc20c9;
+  margin-bottom: 0;
+}
+h3{
+  font-size: 25px;
+  color: white;
+}
+ul{
+  display: block;
+}
+li{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #69d2fe;
+  border: 3px solid #fc20c9;
+  padding: 1em;
+  margin: 0.5em;
+  list-style: none;
+  height: 9em;
+  width: 30%;
+  float: left;
+  margin-top: 4em;
+  margin-bottom: 0;
+}
+.fa-heart{
+  color: #fc20c9;
+}
+input{
+  width: 50%;
+  text-align: center;
+  height: 1.5em;
+}
+button{
+  color: #fc20c9;
+  background: #69d2fe;
+  border: 2px solid black;
+}
