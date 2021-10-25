@@ -1,14 +1,13 @@
-require('dotenv').config()
+// require('dotenv').config()
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
-
-const url = process.env.DB_URL
+// const url = process.env.DB_URL
 
 var db, collection;
 
-
+const url = 'mongodb+srv://devdaph:tPshcQuYG0ltFxR9@cluster0.h8uhl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 const dbName = "fulldb";
 
 app.listen(3000, () => {
@@ -17,7 +16,7 @@ app.listen(3000, () => {
             throw error;
         }
         db = client.db(dbName);
-        console.log("Connected to `" + dbName + "`!");
+        console.log("Connected to host 3000`" + dbName + "`!");
     });
 });
 
